@@ -26,7 +26,7 @@ If the **Cosmetic ID** is `Character_EonFN` and it's a skin, use: `AthenaCharact
 
 #### Formats:
 - **Skins:** `AthenaCharacter:CosmeticID`  
-- **Emotes:** `AthenaDance:CosmeticID`  
+- **Emotes:** `AthenaDance:CosmeticID`  *(Dances, Emoticons, Sprays)*
 - **Pickaxes:** `AthenaPickaxe:CosmeticID`  
 - **Gliders:** `AthenaGlider:CosmeticID`  
 - **Wraps:** `AthenaItemWrap:CosmeticID`  
