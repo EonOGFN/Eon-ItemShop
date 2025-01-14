@@ -5,16 +5,16 @@ Ensure they are from **Chapter 2 Season 2 (Version 12.41)** or earlier, as anyth
 ```json
 {
     "//": "BR Item Shop Config",
-    "daily1": {"itemGrants": [""], "price": 0},
-    "daily2": {"itemGrants": [""], "price": 0},
-    "daily3": {"itemGrants": [""], "price": 0},
-    "daily4": {"itemGrants": [""], "price": 0},
+    "daily1": {"itemGrants": ["AthenaCharacter:CID_207_Athena_Commando_M_FootballDudeA"], "price": 1,500},
+    "daily2": {"itemGrants": ["AthenaCharacter:CID_239_Athena_Commando_M_FootballDudeD"], "price": 1,500},
+    "daily3": {"itemGrants": ["AthenaCharacter:CID_210_Athena_Commando_F_FootballGirlA"], "price": 1,500},
+    "daily4": {"itemGrants": ["AthenaCharacter:CID_211_Athena_Commando_F_FootballGirlB"], "price": 1,500},
     "daily5": {"itemGrants": [""], "price": 0},
     "daily6": {"itemGrants": [""], "price": 0},
-    "featured1": {"itemGrants": [""], "price": 0},
-    "featured2": {"itemGrants": [""], "price": 0},
-    "featured3": {"itemGrants": [""], "price": 0},
-    "featured4": {"itemGrants": [""], "price": 0}            
+    "featured1": {"itemGrants": ["AthenaPickaxe:Pickaxe_ID_094_Football"], "price": 800},
+    "featured2": {"itemGrants": ["AthenaPickaxe:Pickaxe_ID_096_FootballReferee"], "price": 500},
+    "featured3": {"itemGrants": ["AthenaPickaxe:Pickaxe_ID_095_FootballTrophy"], "price": 500},
+    "featured4": {"itemGrants": ["AthenaGlider:Glider_ID_071_Football"], "price": 500}            
 }
 ```  
 
