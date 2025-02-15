@@ -16,16 +16,16 @@ The item shop configuration follows this structure:
 ```json
 {
     "//": "BR Item Shop Config",
-    "daily1": {"itemGrants": [""], "price": 0},
-    "daily2": {"itemGrants": [""], "price": 0},
-    "daily3": {"itemGrants": [""], "price": 0},
-    "daily4": {"itemGrants": [""], "price": 0},
-    "daily5": {"itemGrants": [""], "price": 0},
-    "daily6": {"itemGrants": [""], "price": 0},
-    "featured1": {"itemGrants": [""], "price": 0},
-    "featured2": {"itemGrants": [""], "price": 0},
-    "featured3": {"itemGrants": [""], "price": 0},
-    "featured4": {"itemGrants": [""], "price": 0}            
+    "daily1": {"itemGrants": ["AthenaDance:EID_KPopDance03"], "price": 500},
+    "daily2": {"itemGrants": ["AthenaPickaxe:Pickaxe_ID_154_Squishy"], "price": 500},
+    "daily3": {"itemGrants": ["AthenaCharacter:CID_586_Athena_Commando_F_PunkDevil"], "price": 1,200},
+    "daily4": {"itemGrants": ["AthenaGlider:Glider_ID_116_PizzaPit"], "price": 1,200},
+    "daily5": {"itemGrants": ["AthenaCharacter:CID_344_Athena_Commando_M_IceCream"], "price": 1,500},
+    "daily6": {"itemGrants": ["AthenaDance:EID_Floss"], "price": 300},
+    "featured1": {"itemGrants": ["AthenaCharacter:CID_745_Athena_Commando_M_RavenQuill"], "price": 1,500},
+    "featured2": {"itemGrants": ["AthenaDance:EID_Cyclone"], "price": 500},
+    "featured3": {"itemGrants": ["AthenaCharacter:CID_605_Athena_Commando_M_TourBus"], "price": 1,500},
+    "featured4": {"itemGrants": ["AthenaDance:EID_TourBus"], "price": 300}
 }
 ```
 
@@ -59,16 +59,16 @@ If the **Cosmetic ID** is `Character_EonFN` and it's a skin, it must be formatte
 ```json
 {
     "//": "BR Item Shop Config",
-    "daily1": {"itemGrants": ["AthenaCharacter:Character_EonFN"], "price": 1200},
-    "daily2": {"itemGrants": ["AthenaPickaxe:Pickaxe_EonFN"], "price": 800},
-    "daily3": {"itemGrants": ["AthenaDance:Dance_Flare"], "price": 500},
-    "daily4": {"itemGrants": ["AthenaItemWrap:Wrap_Galaxy"], "price": 300},
-    "daily5": {"itemGrants": ["AthenaGlider:Glider_StarSurfer"], "price": 1500},
-    "daily6": {"itemGrants": ["AthenaLoadingScreen:LoadingScreen_Galactic"], "price": 200},
-    "featured1": {"itemGrants": ["AthenaCharacter:Character_Drift"], "price": 2000},
-    "featured2": {"itemGrants": ["AthenaDance:Dance_DefaultDance"], "price": 200},
-    "featured3": {"itemGrants": ["AthenaSkyDiveContrail:Contrail_Rainbow"], "price": 400},
-    "featured4": {"itemGrants": ["AthenaItemWrap:Wrap_Camo"], "price": 600}
+    "daily1": {"itemGrants": ["AthenaDance:EID_KPopDance03"], "price": 500},
+    "daily2": {"itemGrants": ["AthenaPickaxe:Pickaxe_ID_154_Squishy"], "price": 500},
+    "daily3": {"itemGrants": ["AthenaCharacter:CID_586_Athena_Commando_F_PunkDevil"], "price": 1,200},
+    "daily4": {"itemGrants": ["AthenaGlider:Glider_ID_116_PizzaPit"], "price": 1,200},
+    "daily5": {"itemGrants": ["AthenaCharacter:CID_344_Athena_Commando_M_IceCream"], "price": 1,500},
+    "daily6": {"itemGrants": ["AthenaDance:EID_Floss"], "price": 300},
+    "featured1": {"itemGrants": ["AthenaCharacter:CID_745_Athena_Commando_M_RavenQuill"], "price": 1,500},
+    "featured2": {"itemGrants": ["AthenaDance:EID_Cyclone"], "price": 500},
+    "featured3": {"itemGrants": ["AthenaCharacter:CID_605_Athena_Commando_M_TourBus"], "price": 1,500},
+    "featured4": {"itemGrants": ["AthenaDance:EID_TourBus"], "price": 300}
 }
 ```
 
