@@ -1,17 +1,15 @@
-## ⚠️ IMPORTANT ⚠️
-You can retrieve all Fortnite cosmetics from **[Fortnite.GG](https://fortnite.gg/cosmetics)**.
+## ⚠️ **IMPORTANT INFO BEFORE YOU START** ⚠️  
+- You can get all Fortnite's Battle Royale cosmetics from **[Fortnite.GG](https://fortnite.gg/cosmetics)**.
 
-### Requirements:
-1. **Cosmetics must be from Chapter 2 Season 2 (Version 12.41) or earlier.** Anything newer won’t work.
-2. **Ensure V-Bucks prices match original Fortnite pricing.**
-3. **Use the correct Cosmetic ID Format.** Otherwise, items will not function properly.
+### 🔑 **Requirements for Cosmetics to Work**
+1. **Cosmetics must be from Chapter 2 Season 2 (Version 12.41) or earlier, Anything newer won’t work.**
+2. **Set prices according to Fortnite’s original V-Bucks pricing.**  
+3. **Follow the correct Cosmetic ID format.**  *Incorrect formatting will break the shop.**
 
 ---
 
-## 🔧 How to Set Up Your Item Shop
-
-### **Step 1: Understand the Config Format**
-The item shop configuration follows this structure:
+### 🛠️ **PART 1: Understanding the Config File Structure**  
+- The item shop uses a **JSON file** to define which items appear and their prices. Here's what the basic structure looks like:
 
 ```json
 {
@@ -25,37 +23,44 @@ The item shop configuration follows this structure:
     "featured1": {"itemGrants": [""], "price": 0},
     "featured2": {"itemGrants": [""], "price": 0},
     "featured3": {"itemGrants": [""], "price": 0},
-    "featured4": {"itemGrants": [""], "price": 0}            
+    "featured4": {"itemGrants": [""], "price": 0}
 }
 ```
-
+### 🔍 **Breaking Down the Code:**
+- **`daily1`, `daily2`, etc.:** Slots for daily items (up to 6 items).  
+- **`featured1`, `featured2`, etc.:** Slots for featured items (up to 4 items).  
+- **`itemGrants`:** The actual items being sold, identified by their **Cosmetic ID**.  
+- **`price`:** How many V-Bucks the item costs.  
 ---
 
-### **Step 2: Use the Correct Cosmetic ID Format**
-Each item in Fortnite has a **Cosmetic ID** that must follow a specific format.
+### 🏷️ **PART 2: Correct Cosmetic ID Formatting**  
+- Each item has a unique ID called a **Cosmetic ID**. The format depends on the item type.
 
-#### ✅ Example:
-If the **Cosmetic ID** is `Character_EonFN` and it's a skin, it must be formatted as:
-```json
-"AthenaCharacter:Character_EonFN"
+### ✅ **General Format:**  
+```
+ItemType:CosmeticID
 ```
 
-#### **📌 Correct Formatting by Item Type:**
-- **Skins:** `AthenaCharacter:CosmeticID`
-- **Emotes:** `AthenaDance:CosmeticID` *(Includes Dances, Emoticons, Sprays)*
-- **Pickaxes:** `AthenaPickaxe:CosmeticID`
-- **Gliders:** `AthenaGlider:CosmeticID`
-- **Wraps:** `AthenaItemWrap:CosmeticID`
-- **Loading Screens:** `AthenaLoadingScreen:CosmeticID`
-- **Skydiving Contrails:** `AthenaSkyDiveContrail:CosmeticID`
+### 🔖 **Examples by Item Type:**  
+- **Skins:** `AthenaCharacter:Character_EonFN`  
+- **Emotes (Dances, Emoticons, Sprays):** `AthenaDance:Dance_Flare`  
+- **Pickaxes:** `AthenaPickaxe:Pickaxe_EonFN`  
+- **Gliders:** `AthenaGlider:Glider_StarSurfer`  
+- **Wraps:** `AthenaItemWrap:Wrap_Galaxy`  
+- **Loading Screens:** `AthenaLoadingScreen:LoadingScreen_Galactic`  
+- **Skydiving Contrails:** `AthenaSkyDiveContrail:Contrail_Rainbow`  
+
+**💡 NOTE:** Always wrap your **Cosmetic ID** in double quotes (`""`), or the config will break.
 
 ---
 
-### **Step 3: Fill Out Your Item Shop**
-- **`itemGrants`**: The items that will be available for purchase, identified by their **Cosmetic ID**.
-- **`price`**: The cost of the item in **V-Bucks** (must match original Fortnite pricing).
+### 🏪 **PART 3: Filling Out Your Item Shop**  
+- Here’s how to set up each item in your shop:  
 
-#### ✅ Example Item Shop Config:
+- **`itemGrants`:** Add the formatted Cosmetic ID for the item you want to sell.  
+- **`price`:** Set the cost using Fortnite’s official V-Bucks prices.  
+
+### ✅ **Example Config Setup:**  
 ```json
 {
     "//": "BR Item Shop Config",
@@ -74,8 +79,25 @@ If the **Cosmetic ID** is `Character_EonFN` and it's a skin, it must be formatte
 
 ---
 
-### **✅ Final Checklist**
-- ✔️ Ensure all cosmetics are from **Chapter 2 Season 2 (Version 12.41) or earlier**.
-- ✔️ Use the **correct Cosmetic ID format**.
-- ✔️ Match **V-Bucks prices** to Fortnite’s official pricing.
-- ✔️ Double-check for typos in the config.
+## 🚫 **PART 4: Common Mistakes to Avoid**  
+
+🔴 **DON’T:**  
+- ❌ Forget double quotes around your **Cosmetic ID**. Example: `AthenaCharacter:Character_EonFN` → `"AthenaCharacter:Character_EonFN"`  
+- ❌ Add commas to numbers. Use `1200`, not `1,200`.  
+- ❌ Use cosmetics from versions after **Chapter 2 Season 2** (*they won’t work.*)
+
+✅ **DO:**  
+- ✔️ Double-check every **Cosmetic ID** format.  
+- ✔️ Match Fortnite’s original V-Bucks prices.  
+- ✔️ Use **Visual Studio Code** to spot errors automatically.  
+
+---
+
+## 💡 **PART 5: Pro Tips for a Smoother Setup**  
+
+1. 🖥️ **Install Visual Studio Code (VS Code):**  
+   - It highlights errors in your JSON automatically.  
+   - Helps keep formatting clean and consistent.  
+
+2. 🤖 **Use AI tools (like ChatGPT) to validate your JSON:**  
+   - Quickly check if your formatting is correct before testing in-game.  
