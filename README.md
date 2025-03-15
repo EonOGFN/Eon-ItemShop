@@ -1,103 +1,103 @@
-## ⚠️ **IMPORTANT INFO BEFORE YOU START** ⚠️  
-- You can get all Fortnite's Battle Royale cosmetics from **[Fortnite.GG](https://fortnite.gg/cosmetics)**.
+# Fortnite Battle Royale Cosmetics Config Guide
 
-### 🔑 **Requirements for Cosmetics to Work**
-1. **Cosmetics must be from Chapter 2 Season 2 (Version 12.41) or earlier, Anything newer won’t work.**
-2. **Set prices according to Fortnite’s original V-Bucks pricing.**  
-3. **Follow the correct Cosmetic ID format.**  *Incorrect formatting will break the shop.**
+> **Tip:** All Fortnite cosmetics can be found at [Fortnite.GG/cosmetics](https://fortnite.gg/cosmetics)
 
 ---
 
-### 🛠️ **PART 1: Understanding the Config File Structure**  
-- The item shop uses a **JSON file** to define which items appear and their prices. Here's what the basic structure looks like:
+## 1. Requirements for Cosmetics
+
+- **Version:** Must be from Chapter 2 Season 2 (Version 12.41) or earlier.
+- **Pricing:** Use Fortnite’s official V-Bucks pricing.
+- **Cosmetic ID:** Must follow the correct format (see below).
+
+---
+
+## 2. Config File Structure
+
+The item shop is defined using a JSON file. It contains slots for both daily and featured items.
+
+**Basic JSON Structure:**
 
 ```json
 {
-    "//": "BR Item Shop Config",
-    "daily1": {"itemGrants": [""], "price": 0},
-    "daily2": {"itemGrants": [""], "price": 0},
-    "daily3": {"itemGrants": [""], "price": 0},
-    "daily4": {"itemGrants": [""], "price": 0},
-    "daily5": {"itemGrants": [""], "price": 0},
-    "daily6": {"itemGrants": [""], "price": 0},
-    "featured1": {"itemGrants": [""], "price": 0},
-    "featured2": {"itemGrants": [""], "price": 0},
-    "featured3": {"itemGrants": [""], "price": 0},
-    "featured4": {"itemGrants": [""], "price": 0}
+  "//": "BR Item Shop Config",
+  "daily1": {"itemGrants": [""], "price": 0},
+  "daily2": {"itemGrants": [""], "price": 0},
+  "daily3": {"itemGrants": [""], "price": 0},
+  "daily4": {"itemGrants": [""], "price": 0},
+  "daily5": {"itemGrants": [""], "price": 0},
+  "daily6": {"itemGrants": [""], "price": 0},
+  "featured1": {"itemGrants": [""], "price": 0},
+  "featured2": {"itemGrants": [""], "price": 0},
+  "featured3": {"itemGrants": [""], "price": 0},
+  "featured4": {"itemGrants": [""], "price": 0}
 }
 ```
-### 🔍 **Breaking Down the Code:**
-- **`daily1`, `daily2`, etc.:** Slots for daily items (up to 6 items).  
-- **`featured1`, `featured2`, etc.:** Slots for featured items (up to 4 items).  
-- **`itemGrants`:** The actual items being sold, identified by their **Cosmetic ID**.  
-- **`price`:** How many V-Bucks the item costs.  
+
+- **Daily Items:** `daily1` to `daily6`
+- **Featured Items:** `featured1` to `featured4`
+- **itemGrants:** Cosmetic IDs for the item.
+- **price:** The cost in V-Bucks.
+
 ---
 
-### 🏷️ **PART 2: Correct Cosmetic ID Formatting**  
-- Each item has a unique ID called a **Cosmetic ID**. The format depends on the item type.
+## 3. Cosmetic ID Formatting
 
-### ✅ **General Format:**  
+Each cosmetic has a unique ID. Format them as:
+
 ```
 ItemType:CosmeticID
 ```
 
-### 🔖 **Examples by Item Type:**  
-- **Skins:** `AthenaCharacter:Character_EonFN`  
-- **Emotes (Dances, Emoticons, Sprays):** `AthenaDance:Dance_Flare`  
-- **Pickaxes:** `AthenaPickaxe:Pickaxe_EonFN`  
-- **Gliders:** `AthenaGlider:Glider_StarSurfer`  
-- **Wraps:** `AthenaItemWrap:Wrap_Galaxy`  
-- **Loading Screens:** `AthenaLoadingScreen:LoadingScreen_Galactic`  
-- **Skydiving Contrails:** `AthenaSkyDiveContrail:Contrail_Rainbow`  
+**Examples:**
 
-**💡 NOTE:** Always wrap your **Cosmetic ID** in double quotes (`""`), or the config will break.
+- **Skin:** `"AthenaCharacter:Character_EonFN"`
+- **Emote:** `"AthenaDance:Dance_Flare"`
+- **Pickaxe:** `"AthenaPickaxe:Pickaxe_EonFN"`
+- **Glider:** `"AthenaGlider:Glider_StarSurfer"`
+- **Wrap:** `"AthenaItemWrap:Wrap_Galaxy"`
+- **Loading Screen:** `"AthenaLoadingScreen:LoadingScreen_Galactic"`
+- **Skydiving Contrail:** `"AthenaSkyDiveContrail:Contrail_Rainbow"`
+
+> **Important:** Always wrap Cosmetic IDs in double quotes.
 
 ---
 
-### 🏪 **PART 3: Filling Out Your Item Shop**  
-- Here’s how to set up each item in your shop:  
+## 4. Setting Up Your Item Shop
 
-- **`itemGrants`:** Add the formatted Cosmetic ID for the item you want to sell.  
-- **`price`:** Set the cost using Fortnite’s official V-Bucks prices.  
+To add an item to your shop, fill in the slot with:
+- **itemGrants:** The Cosmetic ID of the item.
+- **price:** Its cost in V-Bucks.
 
-### ✅ **Example Config Setup:**  
+**Example Config:**
+
 ```json
 {
-    "//": "BR Item Shop Config",
-    "daily1": {"itemGrants": ["AthenaCharacter:Character_EonFN"], "price": 1200},
-    "daily2": {"itemGrants": ["AthenaPickaxe:Pickaxe_EonFN"], "price": 800},
-    "daily3": {"itemGrants": ["AthenaDance:Dance_Flare"], "price": 500},
-    "daily4": {"itemGrants": ["AthenaItemWrap:Wrap_Galaxy"], "price": 300},
-    "daily5": {"itemGrants": ["AthenaGlider:Glider_StarSurfer"], "price": 1500},
-    "daily6": {"itemGrants": ["AthenaLoadingScreen:LoadingScreen_Galactic"], "price": 200},
-    "featured1": {"itemGrants": ["AthenaCharacter:Character_Drift"], "price": 2000},
-    "featured2": {"itemGrants": ["AthenaDance:Dance_DefaultDance"], "price": 200},
-    "featured3": {"itemGrants": ["AthenaSkyDiveContrail:Contrail_Rainbow"], "price": 400},
-    "featured4": {"itemGrants": ["AthenaItemWrap:Wrap_Camo"], "price": 600}
+  "//": "BR Item Shop Config",
+  "daily1": {"itemGrants": ["AthenaCharacter:Character_EonFN"], "price": 1200},
+  "daily2": {"itemGrants": ["AthenaPickaxe:Pickaxe_EonFN"], "price": 800},
+  "daily3": {"itemGrants": ["AthenaDance:Dance_Flare"], "price": 500},
+  "daily4": {"itemGrants": ["AthenaItemWrap:Wrap_Galaxy"], "price": 300},
+  "daily5": {"itemGrants": ["AthenaGlider:Glider_StarSurfer"], "price": 1500},
+  "daily6": {"itemGrants": ["AthenaLoadingScreen:LoadingScreen_Galactic"], "price": 200},
+  "featured1": {"itemGrants": ["AthenaCharacter:Character_Drift"], "price": 2000},
+  "featured2": {"itemGrants": ["AthenaDance:Dance_DefaultDance"], "price": 200},
+  "featured3": {"itemGrants": ["AthenaSkyDiveContrail:Contrail_Rainbow"], "price": 400},
+  "featured4": {"itemGrants": ["AthenaItemWrap:Wrap_Camo"], "price": 600}
 }
 ```
 
 ---
 
-## 🚫 **PART 4: Common Mistakes to Avoid**  
+## 5. Common Mistakes to Avoid
 
-🔴 **DON’T:**  
-- ❌ Forget double quotes around your **Cosmetic ID**. Example: `AthenaCharacter:Character_EonFN` → `"AthenaCharacter:Character_EonFN"`  
-- ❌ Add commas to numbers. Use `1200`, not `1,200`.  
-- ❌ Use cosmetics from versions after **Chapter 2 Season 2** (*they won’t work.*)
-
-✅ **DO:**  
-- ✔️ Double-check every **Cosmetic ID** format.  
-- ✔️ Match Fortnite’s original V-Bucks prices.  
-- ✔️ Use **Visual Studio Code** to spot errors automatically.  
+- **No Quotes:** Always put cosmetic IDs in double quotes.
+- **Comma Errors:** Write numbers without commas (e.g., use `1200` not `1,200`).
+- **Wrong Versions:** Do not use cosmetics from after Chapter 2 Season 2.
 
 ---
 
-## 💡 **PART 5: Pro Tips for a Smoother Setup**  
+## 6. Pro Tips
 
-1. 🖥️ **Install Visual Studio Code (VS Code):**  
-   - It highlights errors in your JSON automatically.  
-   - Helps keep formatting clean and consistent.  
-
-2. 🤖 **Use AI tools (like ChatGPT) to validate your JSON:**  
-   - Quickly check if your formatting is correct before testing in-game.  
+- **Use VS Code:** It highlights JSON errors and keeps formatting clean.
+- **Validate with AI Tools:** Tools like ChatGPT can help check your JSON before testing.
