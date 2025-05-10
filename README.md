@@ -54,7 +54,7 @@ ItemType:CosmeticID
 - **Skin:** `"AthenaCharacter:CID_EonFN"`
 - **Emote:** `"AthenaDance:EID_Flare"`
 - **Pickaxe:** `"AthenaPickaxe:Reaper"`
-- - **Backbling:** `"AthenaBackpack:BID_EonFN"`
+- **Backbling:** `"AthenaBackpack:BID_EonFN"`
 - **Glider:** `"AthenaGlider:Glider_StarSurfer"`
 - **Wrap:** `"AthenaItemWrap:GalaxyWrap"`
 - **Loading Screen:** `"AthenaLoadingScreen:LoadingScreen_Galactic"`
