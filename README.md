@@ -32,6 +32,8 @@ The item shop is defined using a JSON file. It contains slots for both daily (`d
 }
 ```
 
+---
+
 > ### Cosmetic ID Formatting
 ```
 ItemType:CosmeticID
