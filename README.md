@@ -75,12 +75,12 @@ To add an item to your shop, fill in the slot with its `itemGrants` (Cosmetic ID
 ---
 
 > ### Common Mistakes to Avoid
-- **No Quotes:** Always put cosmetic IDs in double quotes.
-- **Comma Errors:** Write numbers without commas (e.g., use `1200` not `1,200`).
-- **Wrong Versions:** Do not use cosmetics from after Chapter 2 Season 2.
+* **Missing Quotes:** Always use double quotes for Cosmetic IDs like `"AthenaCharacter:CID_Example"`. ***(Including Format)***
+* **Number Format:** Don’t use commas in numbers. Write `1200`, not `1,200`.
+* **Wrong Items:** Only use cosmetics from **Chapter 2 Season 2 (Version 12.41) or earlier**.
 
 ---
 
-> ### Pro Tips
-- **Use VS Code:** It highlights JSON errors and keeps formatting clean.
-- **Validate with AI Tools:** Tools like ChatGPT can help check your JSON before testing.
+> ### Helpful Tips
+* **Use VS Code:** It makes editing easier and shows you if something's wrong with your file.
+* **Double-Check with AI:** Tools like ChatGPT can help review your JSON before you test it.
