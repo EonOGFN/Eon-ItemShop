@@ -1,6 +1,6 @@
 # Fortnite Battle Royale Cosmetics Config Guide
 
-> **Tip:** All Fortnite cosmetics can be found at [Fortnite.GG/cosmetics](https://fortnite.gg/cosmetics?game=br&type=outfit&season=12,1,2,3,4,5,6,7,8,9,10,11&sort=oldest)
+> **Tip:** All Fortnite cosmetics can be found at [Fortnite.GG/cosmetics](https://fortnite.gg/cosmetics?game=br&type=outfit&season=1,2,3,4,5,6,7,8,9,10,11,12&sort=oldest)
 
 ---
 
