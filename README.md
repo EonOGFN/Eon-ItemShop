@@ -1,12 +1,12 @@
 # Fortnite Battle Royale - Itemshop Guide
 
 > [!NOTE]
-> ***All Fortnite cosmetics can be found at [Fortnite.GG/Cosmetics](https://fortnite.gg/cosmetics?game=br&type=outfit&season=1,2,3,4,5,6,7,8,9,10,11,12&sort=oldest).***
+> ***All Fortnite cosmetics can be found at [Fortnite.GG/Cosmetics](https://fortnite.gg/cosmetics?game=br&type=outfit&season=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17&sort=oldest).***
 
 ---
 
 > ### Requirements for Cosmetics
-- **Version:** Must be from Chapter 2 Season 2 (Version 12.41) or earlier.
+- **Version:** Must be from Chapter 2 Season 7 (Version 17.50) or earlier.
 - **Pricing:** Use Fortnite’s official V-Bucks pricing.
 - **Cosmetic ID:** Must follow the correct format (see below).
 
