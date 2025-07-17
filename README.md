@@ -2,18 +2,14 @@
 
 > [!NOTE]
 > ***All Fortnite cosmetics can be found at [Fortnite.GG/Cosmetics](https://fortnite.gg/cosmetics?game=br&type=outfit&season=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17&sort=oldest).***
-
----
-
-> ### Requirements for Cosmetics
-- **Version:** Must be from Chapter 2 Season 7 (Version 17.50) or earlier.
-- **Pricing:** Use Fortnite’s official V-Bucks pricing.
-- **Cosmetic ID:** Must follow the correct format (see below).
+> - **Version:** Cosmetics up to Chapter 2 Season 7 *(v17.50)*
+> - **Pricing:** Fortnite’s official V-Bucks pricing
+> - **Cosmetic ID:** `ItemType:CosmeticID` format in double quotes
 
 ---
 
 > ### Config File Structure
-The item shop is defined using a JSON file. It contains slots for both daily (`daily1` to `daily6`) and featured (`featured1` to `featured4`) items, each with a `price` (in V-Bucks) and `itemGrants` (Cosmetic IDs).
+The item shop is defined using a JSON file. It contains slots for both daily **(`daily1` to `daily6`)** and featured **(`featured1` to `featured4`)** items, each with a **`price`** (in V-Bucks) and **`itemGrants`** (Cosmetic IDs).
 
 ```json
 {
